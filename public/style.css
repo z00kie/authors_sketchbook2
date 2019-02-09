@@ -1,0 +1,21 @@
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body {
+  background-color: #000;
+}
+
+.main {
+  background-color: green;
+  width: 300px;
+  height: 100px;
+}
+
+.content {
+  background-color: yellow;
+  width: 300px;
+  height: 100px;
+}
