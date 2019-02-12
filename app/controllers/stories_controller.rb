@@ -60,12 +60,12 @@ class StoriesController < ApplicationController
 
    patch '/stories/:id' do
     if logged_in?
-      if params[:content] == ""
-        redirect to "/stories/#{params[:id]}/edit"
-      else
         @story = Story.find_by_id(params[:id])
         if @story && @story.user == current_user
-          if @story.update(:content => params[:content])
+          if @story.update(title: params[:title],
+            genre: params[:genre],
+            summary: params[:summary],
+            notes: params[:notes])
             redirect to "/stories/#{@story.id}"
           else
             redirect to "/stories/#{@story.id}/edit"
@@ -73,7 +73,6 @@ class StoriesController < ApplicationController
         else
           redirect to '/stories'
         end
-      end
     else
       redirect to '/login'
     end

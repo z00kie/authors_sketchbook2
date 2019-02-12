@@ -8,7 +8,8 @@
     <%@user.stories.each do |story| %>
       <h3> <%= story.title %></h3>
       <h4> <%= story.genre %></h4>
-      <p><em><%= story.summary %></em></p>
+      <p><em><%= story.summary %></em><br>
+      <a href="/stories/<%= story.id %>/edit">Edit this story.</a></p>
       <%end%>
 
      <a href="/stories">View all of your stories.</a><br>
