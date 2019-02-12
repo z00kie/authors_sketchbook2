@@ -25,7 +25,7 @@ Specs:
 
 Confirm
 - [X] You have a large number of small Git commits
-        --I currently have them in the wrong repo, fixing this now. Also this is the second iteration of this project and so there are about two-three times the amount of commits listed
+        --I currently have them in the wrong repo, fixing this now. Also this is the second iteration of this project and so there are about two-three times the amount of commits listed. First committed to an original, now deleted repo. Then accidentally commited to the [Fwitter](https://github.com/z00kie/sinatra-fwitter-group-project-v-000) repo. Created [authors_sketchbook2](https://github.com/z00kie/authors_sketchbook2) twice due to github linking errors.
 - [X] Your commit messages are meaningful
         --Short and to the point
 - [X] You made the changes in a commit that relate to the commit message
