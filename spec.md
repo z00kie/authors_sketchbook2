@@ -31,4 +31,4 @@ Confirm
 - [X] You made the changes in a commit that relate to the commit message
         --Accurate messages listed
 - [X] You don't include changes in a commit that aren't related to the commit message
-        --Accurate messages listed
+        --Mostly, one or two accidents.
