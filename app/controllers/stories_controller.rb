@@ -37,9 +37,15 @@ class StoriesController < ApplicationController
   end
 
    get '/stories/:id' do
+    #added user validation so you can view show
+      #pages for stories only created by you 
     if logged_in?
       @story = Story.find_by_id(params[:id])
-      erb :'/stories/show_story'
+      if @story && @story.user == current_user
+        erb :'/stories/show_story'
+      else
+        redirect to '/stories'
+      end
     else
       redirect to '/login'
     end
